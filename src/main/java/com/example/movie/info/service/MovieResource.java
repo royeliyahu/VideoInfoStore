@@ -29,5 +29,8 @@ public class MovieResource {
         return  movieService.getMovieListInfo(movieList);
     }
 
-
+    @RequestMapping("/")
+    String root(){
+        return "Hi there, Movie Info Service is online!<br>please check swagger-ui.html# for available commands";
+    }
 }
